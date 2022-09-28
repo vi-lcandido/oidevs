@@ -1,0 +1,78 @@
+body {
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 32px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (min-width: 1250px) {
+  body {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+.conteudo_do_filme {
+  text-align: justify;
+  line-height: 24px;
+}
+
+h1,
+h2 {
+  color: #f58b22;
+}
+
+p {
+  color: white;
+}
+
+table,
+th,
+td {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex_coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: #f58c22;
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+}
+
+.infos_filme {
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 32px;
+}
+.texto_cinza {
+  color: rgb(148, 142, 142);
+  padding-left: 8px;
+}
+.classificacao_indicativa {
+  font-size: small;
+}
