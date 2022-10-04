@@ -1,0 +1,93 @@
+/* @font-face {
+    font-family: banana;
+    src: url(caminho de onde está);
+} */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  max-width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  /* o margin é usado pra centralizar a main no centro, o justify content centralizaria o conteúdo dentro da main */
+  align-items: center;
+}
+
+input:not([type="checkbox"], [type="radio"]),
+button,
+textarea,
+select {
+  width: 100%;
+  min-height: 48px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid;
+  outline: none;
+  padding: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: blueviolet;
+}
+
+form {
+  width: 100%;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+section:last-child {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  color: aliceblue;
+}
+
+button:nth-child(1) {
+  flex: 2;
+  background-color: blueviolet;
+
+  /* essa prop flex é uma divisão do espaço total e precisa que o pai seja felx pra funcionar */
+}
+
+button:nth-child(2) {
+  flex: 1;
+  background-color: blueviolet;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+@media print {
+  label[for="tipo"],
+  #tipo,
+  .button-container {
+    display: none;
+  }
+}
+/* section *{
+    flex: 1;
+} */
