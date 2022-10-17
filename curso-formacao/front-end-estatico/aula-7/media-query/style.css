@@ -1,0 +1,36 @@
+/* mobile first*/
+/* celular - 480px - 768px
+tablet - 768px - 1024px
+maiores - 1024px - 1200px
+enormes - 1200px +
+*/
+ /*media query é uma fç, abaixo o tamanho máximo da tela está em 500e min 300. 
+ A palavra only é utilizada para quando será concatenado duas infos ou mais como abaixo
+
+ */
+
+/* @media screen (max-width:500px) {
+
+}
+
+@media only screen and (max-width: 500px) and (min-width: 300px){
+    body {
+        background-color: aqua;
+    }
+    
+}
+
+@media (400px <= width <= 600px) {
+    
+} */
+
+@media (orientation: landscape) {
+    body {
+        background-color: blue;
+    }
+
+}
+
+@media (height > 250px) {
+    
+}

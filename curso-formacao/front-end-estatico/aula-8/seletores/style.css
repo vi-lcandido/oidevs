@@ -1,0 +1,134 @@
+/* div{
+    height: 50px;
+    background-color: aqua;
+} */
+
+/* .classe-01{
+    background-color: aquamarine;
+}
+
+
+.classe-02{
+    width: 50%;
+} */
+/*as duas classes juntas, se um elemento tiver só umas das duas ele não pega a estilização abaixo*/
+/* .classe-01.classe-02 {
+    background-color: blueviolet;
+}
+
+.classe-03 {
+    color: aqua;
+}
+
+.classe-01 .span-01 p {
+  background-color: red;  
+} */
+
+
+/* abaixo pega todos os parágrafos que estão diretamente dentro de algum span*/
+
+/* span>p{
+
+    background-color: red;
+
+}
+
+div~p {
+
+}
+
+div+p {
+
+} */
+
+/*pega todo elemento que tenha este atributo setad*/
+
+/* [data-fruta] {
+    color: red;
+} */
+
+/*é possícel selecionar por um valor específico*/
+
+/* [data-banana="banana prata" ] {
+    color: red;
+} */
+
+/*com ~= pegará o que tiver prata em sua propriedade, tem que ter aquele termo */
+
+/* [data-banana ~="prata" ] {
+    color: red;
+} */
+
+/*substring, possua o termo em ordem*/
+
+/* [data-banana+="prata"] {
+    background-color: red;
+} */
+
+/*iniciliza com um termo*/
+
+/* [data-fruta^="abac"] {
+    background-color: red;
+} */
+
+/*finaliza ocm um termo*/
+/* [data-fruta$="te"] {
+    background-color: red;
+} */
+
+ /*pega se tiver atributo exatamente igual "ab" ou que seja separado por hifen "ab-"*/
+/* [data-banana|="ab"] {
+    background-color: red;
+} */
+
+/*pega o parágrafo q está dentro de uma div desde q seja primeiro filho*/
+
+/* div p:first-child{
+    color: red;
+} */
+
+/*pega o parágrafo q está dentro de uma div desde q seja último filho*/
+/* div p:last-child{
+    color: red;
+} */
+
+/*pega o parágrafo dentro de uma div desde que seja o primeiro filho:*/
+
+/* div p:nth-child(1){
+    color: red;
+} */
+/*dentro d euma div pega o primeiro do tipo parágrafo*/
+
+/* div p:nth-of-type(1) {
+
+    color:blue
+} */
+/*pega os impares*/
+/* div p:nth-child(odd) {
+
+    color:blue
+} */
+
+
+/*pega os múltiplos de 2*/
+/* div p:nth-child(2n) {
+    color: blue;
+} */
+
+
+/* p::first-letter {
+    color: red;
+}
+
+p::first-line {
+    color: red;
+} */
+/* 
+input {
+    outline: 2px solid red;
+} */
+
+input:focus{
+    border: none;
+    background-color: red;
+}
