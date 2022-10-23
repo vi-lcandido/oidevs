@@ -10,7 +10,7 @@ const aluno = prompt("Digite o nome do aluno: ")
 document.write(`
 <h1>Olá ${aluno}</h1>
 <h2>${turma}</h2>
-<p>Exibindo um amatriz</p>
+<p>Exibindo uma matriz</p>
 `)
 
 for (let linha = 0; linha < matriz.length; linha++) {
