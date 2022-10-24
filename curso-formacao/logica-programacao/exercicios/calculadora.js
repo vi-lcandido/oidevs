@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")();
 
 const number1 = prompt("Digite um número: ");
 
-const operador = prompt("Digite um operador: ");
+const operador = prompt("Digite um operador (+, -, * ou /): ");
 
 const number2 = prompt("Digite outro número: ");
 
@@ -27,6 +27,6 @@ switch (operador) {
     console.log(`${number1} * ${number2} = ${multiplicacao}`);
     break;
   default:
-    console.log("Digite um operador e número válido");
+    console.log("Digite um operador válido");
     break;
 }
