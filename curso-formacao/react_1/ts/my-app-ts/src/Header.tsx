@@ -3,12 +3,22 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <button>
-        <a href="/">Home</a>
+      <button type="button"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "/";
+        }}>
+        Home
       </button>
 
-      <button>
-        <a href="/produtos">Produtos</a>
+      <button
+        type="button"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "/produtos";
+        }}
+      >
+        Produtos
       </button>
     </header>
   );
