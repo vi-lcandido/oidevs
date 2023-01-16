@@ -1,0 +1,11 @@
+.login-header {
+  padding-bottom: 70px;
+  opacity: 0.75;
+  color: #fff;
+}
+
+h2.title {
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  padding: 0 5px 2px;
+}
