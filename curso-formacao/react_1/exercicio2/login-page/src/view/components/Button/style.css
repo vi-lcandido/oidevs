@@ -4,4 +4,9 @@
   margin: 10px 0;
   height: 40px;
   color: #e1e1e1;
+  cursor: pointer;
+}
+
+.login-button:hover{
+  opacity: 0.8;
 }
