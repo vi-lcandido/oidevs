@@ -5,8 +5,9 @@
   height: 40px;
   color: #e1e1e1;
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .login-button:hover{
-  opacity: 0.8;
+  opacity: 1;
 }
