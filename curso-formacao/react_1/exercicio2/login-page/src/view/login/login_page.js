@@ -12,10 +12,7 @@ function LoginPage() {
         <Input label="Usuário" inputtype="email" />
         <Input label="Senha" inputtype="password" />
         <Button text="login" link="https://discord.gg/RmrcEeBa" />
-        <Link
-          text="Esqueceu a seha?"
-          link="https://www.youtube.com/watch?v=K6tzeZLjUNE&ab_channel=NPRMusic"
-        />
+        <Link text="Esqueceu a seha?" link="https://www.google.com.br" />
       </section>
     </div>
   );
