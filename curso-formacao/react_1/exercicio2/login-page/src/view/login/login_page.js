@@ -21,8 +21,6 @@ function LoginPage() {
         <Button
           text="Entrar"
           redirecionar={vaParaHome}
-          bgColor="#a13854"
-          color="#e1e1e1"
         />
         <Link text="Esqueceu a senha?" link="https://www.google.com.br" />
       </section>

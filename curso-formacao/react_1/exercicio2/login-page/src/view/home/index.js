@@ -14,10 +14,8 @@ function Home() {
       <Button
         text="Voltar"
         redirecionar={vaParaLogin}
-        bgColor="#dd6585"
         padding="10px"
         borderRadius="5px"
-        color="000"
       />
       <h1>Essa é a Home!</h1>
     </div>
