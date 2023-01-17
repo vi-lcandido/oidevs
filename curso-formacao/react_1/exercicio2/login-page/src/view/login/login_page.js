@@ -18,8 +18,13 @@ function LoginPage() {
         <Title text="Login" />
         <Input label="Usuário" inputtype="email" />
         <Input label="Senha" inputtype="password" />
-        <Button text="Entrar" redirecionar={vaParaHome} />
-        <Link text="Esqueceu a seha?" link="https://www.google.com.br" />
+        <Button
+          text="Entrar"
+          redirecionar={vaParaHome}
+          bgColor="#a13854"
+          color="#e1e1e1"
+        />
+        <Link text="Esqueceu a senha?" link="https://www.google.com.br" />
       </section>
     </div>
   );

@@ -1,8 +1,12 @@
 import "./style.css";
 
-function Button({ text, redirecionar }) {
+function Button({ bgColor, padding, borderRadius, color, text, redirecionar }) {
   return (
-    <button onClick={redirecionar} className="login-button">
+    <button
+      onClick={redirecionar}
+      className="login-button"
+      style={{ backgroundColor: bgColor, padding, borderRadius, color }}
+    >
       {text}
     </button>
   );

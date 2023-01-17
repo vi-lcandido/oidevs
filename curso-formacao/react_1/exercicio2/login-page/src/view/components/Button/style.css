@@ -1,9 +1,7 @@
 .login-button {
-  background-color: #a13854;
   border: none;
   margin: 10px 0;
   height: 40px;
-  color: #e1e1e1;
   cursor: pointer;
   opacity: 0.8;
 }
