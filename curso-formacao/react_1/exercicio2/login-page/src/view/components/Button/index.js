@@ -1,11 +1,8 @@
 import "./style.css";
 
-function Button({ text, link }) {
+function Button({ text, redirecionar }) {
   return (
-    <button
-      onClick={() => (window.location.href = link)}
-      className="login-button"
-    >
+    <button onClick={redirecionar} className="login-button">
       {text}
     </button>
   );
