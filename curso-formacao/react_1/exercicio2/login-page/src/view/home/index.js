@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+const Home = () => {
   const navigate = useNavigate();
 
   function vaParaLogin() {

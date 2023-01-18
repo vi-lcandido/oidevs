@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Button({ padding, borderRadius, text, redirecionar }) {
+const Button = ({ padding, borderRadius, text, redirecionar }) => {
   return (
     <button
       onClick={redirecionar}

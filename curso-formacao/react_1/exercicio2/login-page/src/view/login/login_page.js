@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import Link from "../components/Link";
 import "./style.css";
 
-function LoginPage() {
+const LoginPage = () => {
   const navigate = useNavigate();
 
   function vaParaHome() {
@@ -18,14 +18,11 @@ function LoginPage() {
         <Title text="Login" />
         <Input label="Usuário" inputtype="email" />
         <Input label="Senha" inputtype="password" />
-        <Button
-          text="Entrar"
-          redirecionar={vaParaHome}
-        />
+        <Button text="Entrar" redirecionar={vaParaHome} />
         <Link text="Esqueceu a senha?" link="https://www.google.com.br" />
       </section>
     </div>
   );
-}
+};
 
 export default LoginPage;

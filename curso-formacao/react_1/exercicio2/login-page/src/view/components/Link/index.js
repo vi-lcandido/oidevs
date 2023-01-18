@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Link({ text, link }) {
+const Link = ({ text, link }) => {
   return (
     <a className="login-link" href={link} target="_blank">
       {text}
