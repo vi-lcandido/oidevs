@@ -13,8 +13,8 @@ function LoginPage() {
   }
 
   return (
-    <div className="login-page">
-      <section className="login-container">
+    <div className="page">
+      <section className="container">
         <Title text="Login" />
         <Input label="Usuário" inputtype="email" />
         <Input label="Senha" inputtype="password" />
