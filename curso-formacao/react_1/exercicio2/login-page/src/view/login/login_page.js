@@ -1,23 +1,34 @@
-import { useNavigate } from "react-router-dom";
+import "./style.css";
+
 import Title from "../components/Title";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Link from "../components/Link";
 import Subtitle from "../components/Subtitle";
-import "./style.css";
+
+// import forgotPassword from "../forgotPassword";
+
+import { Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const LoginPage = () => {
   const navigate = useNavigate();
+
   const [title, setTitle] = useState("Login");
+
   const mudarTitulo = () => {
     setTitle("Alterado");
   };
+
   const [subtitle, setSubtitle] = useState();
 
-  function vaParaHome() {
+  const vaParaHome = () => {
     navigate("/home");
-  }
+  };
+
+  const vaParaRecuperarSenha = () => {
+    navigate("/forgotPassword");
+  };
 
   return (
     <div className="page">
@@ -33,7 +44,7 @@ const LoginPage = () => {
         <Input
           placeholder="Digite sua senha"
           label="Senha"
-          inputtype="password"
+          inputType={"password"}
         />
         <Button text="Entrar" aoClicar={vaParaHome} />
         <Button
@@ -42,7 +53,7 @@ const LoginPage = () => {
           bgcolor="#2bcee3"
           borderRadius="10px"
         />
-        <Link text="Esqueceu a senha?" link="https://www.google.com.br" />
+        <Link text="Esqueceu a senha?" aoClicar={vaParaRecuperarSenha} />
       </section>
     </div>
   );

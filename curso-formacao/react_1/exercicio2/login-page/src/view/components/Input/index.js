@@ -1,11 +1,12 @@
 import "./style.css";
+import ProtoTypes from "prop-types";
 
-const Input = ({ label, inputtype, placeholder, onChange, value }) => {
+const Input = ({ label, inputType, placeholder, onChange, value }) => {
   return (
     <>
       <label>{label}</label>
       <input
-        type={inputtype}
+        type={inputType}
         placeholder={placeholder}
         onChange={onChange}
         value={value}
@@ -13,6 +14,13 @@ const Input = ({ label, inputtype, placeholder, onChange, value }) => {
       />
     </>
   );
+};
+
+Input.propTypes = {
+  inputType: ProtoTypes.string,
+  placeholder: ProtoTypes.string.isRequired,
+  onChange: ProtoTypes.func,
+  value: ProtoTypes.string
 };
 
 export default Input;

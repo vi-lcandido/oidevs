@@ -1,11 +1,17 @@
 import "./style.css";
+import ProtoTypes from "prop-types";
 
-const Link = ({ text, link }) => {
+const Link = ({ text, aoClicar }) => {
   return (
-    <a className="login-link" href={link} target="_blank">
+    <a className="login-link" onClick={aoClicar} target="_blank">
       {text}
     </a>
   );
-}
+};
+
+Link.propTypes = {
+  text: ProtoTypes.string,
+  aoClicar: ProtoTypes.func,
+};
 
 export default Link;
