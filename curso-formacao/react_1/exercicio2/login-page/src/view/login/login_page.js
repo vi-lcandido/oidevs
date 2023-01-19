@@ -12,9 +12,6 @@ const LoginPage = () => {
   const mudarTitulo = () => {
     setTitle("Sucesso")
   }
-  const tituloInicial = () => {
-    setTitle(title)
-  }
 
   function vaParaHome() {
     navigate("/home");

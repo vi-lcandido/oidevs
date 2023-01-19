@@ -15,7 +15,7 @@ const Button = ({ borderRadius, color, text, aoClicar }) => {
 
 Button.propTypes = {
   text: ProtoTypes.string.isRequired,
-  redirecionar: ProtoTypes.func.isRequired,
+  aoClicar: ProtoTypes.func.isRequired,
   borderRadius: ProtoTypes.string,
 };
 
