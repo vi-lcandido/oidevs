@@ -12,6 +12,9 @@ const LoginPage = () => {
   const mudarTitulo = () => {
     setTitle("Sucesso")
   }
+  const tituloInicial = () => {
+    setTitle(title)
+  }
 
   function vaParaHome() {
     navigate("/home");
@@ -24,7 +27,7 @@ const LoginPage = () => {
         <Input label="Usuário" inputtype="email" />
         <Input label="Senha" inputtype="password" />
         <Button text="Entrar" aoClicar={vaParaHome} />
-        <Button text="Trocar título" aoClicar={mudarTitulo} borderRadius="10px"/>
+        <Button text="Trocar título" aoClicar={mudarTitulo} color="#82ee90" borderRadius="10px"/>
         <Link text="Esqueceu a senha?" link="https://www.google.com.br" />
       </section>
     </div>
