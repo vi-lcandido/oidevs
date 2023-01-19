@@ -12,20 +12,11 @@ import { Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const LoginPage = () => {
-  const navigate = useNavigate();
-
+  
   const [title, setTitle] = useState("Login");
-
-  const mudarTitulo = () => {
-    setTitle("Alterado");
-  };
-
   const [subtitle, setSubtitle] = useState();
-
-  const vaParaHome = () => {
-    navigate("/home");
-  };
-
+  
+  const navigate = useNavigate();
   const vaParaRecuperarSenha = () => {
     navigate("/forgotPassword");
   };
@@ -46,10 +37,11 @@ const LoginPage = () => {
           label="Senha"
           inputType={"password"}
         />
-        <Button text="Entrar" aoClicar={vaParaHome} />
+        <Button text="Entrar" aoClicar={() => navigate("/home")} />
         <Button
           text="Trocar título"
-          aoClicar={mudarTitulo}
+          aoClicar={() => 
+            setTitle("Alterado")}
           bgcolor="#2bcee3"
           borderRadius="10px"
         />
