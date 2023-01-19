@@ -6,26 +6,23 @@ import Button from "../components/Button";
 import Link from "../components/Link";
 import Subtitle from "../components/Subtitle";
 
-// import forgotPassword from "../forgotPassword";
-
-import { Route, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const LoginPage = () => {
-  
   const [title, setTitle] = useState("Login");
   const [subtitle, setSubtitle] = useState();
-  
+
   const navigate = useNavigate();
-  const vaParaRecuperarSenha = () => {
-    navigate("/forgotPassword");
-  };
+  // const recuperarSenha = () => {
+  //   navigate("/recoverPassword");
+  // };
 
   return (
     <div className="page">
       <section className="container">
         <Title text={title} />
-        <Subtitle text={`Olá, ${subtitle}`} />
+        <Subtitle text={subtitle} />
         <Input
           placeholder="Digite o usuário"
           label="Usuário"
@@ -40,12 +37,14 @@ const LoginPage = () => {
         <Button text="Entrar" aoClicar={() => navigate("/home")} />
         <Button
           text="Trocar título"
-          aoClicar={() => 
-            setTitle("Alterado")}
+          aoClicar={() => setTitle("Alterado")}
           bgcolor="#2bcee3"
           borderRadius="10px"
         />
-        <Link text="Esqueceu a senha?" aoClicar={vaParaRecuperarSenha} />
+        <Link
+          text="Esqueceu a senha?"
+          aoClicar={() => navigate("/recoverPassword")}
+        />
       </section>
     </div>
   );
