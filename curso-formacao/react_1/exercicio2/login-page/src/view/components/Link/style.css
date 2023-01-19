@@ -1,8 +1,8 @@
-a.login-link{
-    text-decoration: none;
-    color: #fff;
-    margin-top: 10px;
-    text-align: center;
-    opacity: 0.75;
-    font-size: 13px;
+a.login-link {
+  text-decoration: none;
+  color: #e1e1e1;
+  margin-top: 10px;
+  text-align: center;
+  opacity: 0.75;
+  font-size: 13px;
 }

@@ -1,10 +1,10 @@
 .login-button {
-  background-color: #a13854;
   border: none;
   margin: 10px 0;
   height: 40px;
   cursor: pointer;
   opacity: 0.8;
+  color:#e1e1e1
 }
 
 .login-button:hover{

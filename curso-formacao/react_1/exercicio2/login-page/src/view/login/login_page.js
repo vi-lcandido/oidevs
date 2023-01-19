@@ -3,15 +3,17 @@ import Title from "../components/Title";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Link from "../components/Link";
+import Subtitle from "../components/Subtitle";
 import "./style.css";
 import { useState } from "react";
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  const [title, setTitle] = useState("Login de agora")
+  const [title, setTitle] = useState("Login");
   const mudarTitulo = () => {
-    setTitle("Sucesso")
-  }
+    setTitle("Alterado");
+  };
+  const [subtitle, setSubtitle] = useState();
 
   function vaParaHome() {
     navigate("/home");
@@ -21,10 +23,25 @@ const LoginPage = () => {
     <div className="page">
       <section className="container">
         <Title text={title} />
-        <Input label="Usuário" inputtype="email" />
-        <Input label="Senha" inputtype="password" />
+        <Subtitle text={subtitle} />
+        <Input
+          placeholder="Digite o usuário"
+          label="Usuário"
+          value={subtitle}
+          onChange={(e) => setSubtitle(e.target.value)}
+        />
+        <Input
+          placeholder="Digite sua senha"
+          label="Senha"
+          inputtype="password"
+        />
         <Button text="Entrar" aoClicar={vaParaHome} />
-        <Button text="Trocar título" aoClicar={mudarTitulo} color="#82ee90" borderRadius="10px"/>
+        <Button
+          text="Trocar título"
+          aoClicar={mudarTitulo}
+          bgcolor="#2bcee3"
+          borderRadius="10px"
+        />
         <Link text="Esqueceu a senha?" link="https://www.google.com.br" />
       </section>
     </div>

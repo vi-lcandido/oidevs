@@ -1,12 +1,12 @@
 import "./style.css";
 import ProtoTypes from "prop-types";
 
-const Button = ({ borderRadius, color, text, aoClicar }) => {
+const Button = ({ borderRadius, bgcolor, text, aoClicar }) => {
   return (
     <button
       onClick={aoClicar}
       className="login-button"
-      style={{ borderRadius, color }}
+      style={{ borderRadius, backgroundColor: bgcolor }}
     >
       {text}
     </button>
@@ -15,13 +15,13 @@ const Button = ({ borderRadius, color, text, aoClicar }) => {
 
 Button.propTypes = {
   text: ProtoTypes.string.isRequired,
-  aoClicar: ProtoTypes.func.isRequired,
+  aoClicar: ProtoTypes.func,
   borderRadius: ProtoTypes.string,
 };
 
 Button.defaultProps = {
   borderRadius: "0px",
-  color: "#e1e1e1",
+  bgcolor: "#a13854",
 };
 
 export default Button;
