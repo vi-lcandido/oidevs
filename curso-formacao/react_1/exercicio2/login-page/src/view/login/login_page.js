@@ -4,9 +4,14 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import Link from "../components/Link";
 import "./style.css";
+import { useState } from "react";
 
 const LoginPage = () => {
   const navigate = useNavigate();
+  const [title, setTitle] = useState("Login de agora")
+  const mudarTitulo = () => {
+    setTitle("Sucesso")
+  }
 
   function vaParaHome() {
     navigate("/home");
@@ -15,10 +20,11 @@ const LoginPage = () => {
   return (
     <div className="page">
       <section className="container">
-        <Title text="Login" />
+        <Title text={title} />
         <Input label="Usuário" inputtype="email" />
         <Input label="Senha" inputtype="password" />
-        <Button text="Entrar" redirecionar={vaParaHome} />
+        <Button text="Entrar" aoClicar={vaParaHome} />
+        <Button text="Trocar título" aoClicar={mudarTitulo} borderRadius="10px"/>
         <Link text="Esqueceu a senha?" link="https://www.google.com.br" />
       </section>
     </div>

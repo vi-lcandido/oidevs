@@ -1,15 +1,26 @@
 import "./style.css";
+import ProtoTypes from "prop-types";
 
-const Button = ({ padding, borderRadius, text, redirecionar }) => {
+const Button = ({ borderRadius, text, aoClicar }) => {
   return (
     <button
-      onClick={redirecionar}
+      onClick={aoClicar}
       className="login-button"
-      style={{ padding, borderRadius }}
+      style={{ borderRadius }}
     >
       {text}
     </button>
   );
-}
+};
+
+Button.propTypes = {
+  text: ProtoTypes.string.isRequired,
+  redirecionar: ProtoTypes.func.isRequired,
+  borderRadius: ProtoTypes.string,
+};
+
+Button.defaultProps = {
+  borderRadius: "0px",
+};
 
 export default Button;
