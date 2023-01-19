@@ -23,7 +23,7 @@ const LoginPage = () => {
     <div className="page">
       <section className="container">
         <Title text={title} />
-        <Subtitle text={subtitle} />
+        <Subtitle text={`Olá, ${subtitle}`} />
         <Input
           placeholder="Digite o usuário"
           label="Usuário"
