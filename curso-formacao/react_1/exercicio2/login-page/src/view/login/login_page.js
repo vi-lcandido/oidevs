@@ -14,9 +14,6 @@ const LoginPage = () => {
   const [subtitle, setSubtitle] = useState();
 
   const navigate = useNavigate();
-  // const recuperarSenha = () => {
-  //   navigate("/recoverPassword");
-  // };
 
   return (
     <div className="page">
