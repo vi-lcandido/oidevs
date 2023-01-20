@@ -34,7 +34,7 @@ const LoginPage = () => {
         <Button text="Entrar" aoClicar={() => navigate("/home")} />
         <Button
           text="Trocar título"
-          aoClicar={() => setTitle("Alterado")}
+          aoClicar={() => setTitle(title === "Login" ? "Alterado" : "Login")}
           bgcolor="#2bcee3"
           borderRadius="10px"
         />
