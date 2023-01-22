@@ -1,10 +1,10 @@
 import "./style.css";
 import ProtoTypes from "prop-types";
 
-const Input = ({ label, inputType, placeholder, onChange, value }) => {
+const Input = ({ label, inputType, placeholder, onChange, value, cor }) => {
   return (
     <>
-      <label>{label}</label>
+      <label style={{ color: cor }}>{label}</label>
       <input
         type={inputType}
         placeholder={placeholder}
@@ -20,7 +20,12 @@ Input.propTypes = {
   inputType: ProtoTypes.string,
   placeholder: ProtoTypes.string.isRequired,
   onChange: ProtoTypes.func,
-  value: ProtoTypes.string
+  value: ProtoTypes.string,
+  // cor: ProtoTypes.string
 };
+
+Input.defaultProps = {
+  cor: "black"
+}
 
 export default Input;

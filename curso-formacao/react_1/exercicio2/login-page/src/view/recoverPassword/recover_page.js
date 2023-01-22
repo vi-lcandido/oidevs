@@ -15,6 +15,7 @@ const RecoverPage = () => {
           inputType={"email"}
           placeholder="Digite seu email"
         />
+        {/* <Button text="Enviar" aoClicar={window.alert("E-mail enviado")} /> */}
         <Button
           text="Voltar"
           aoClicar={() => navigate("/")}
