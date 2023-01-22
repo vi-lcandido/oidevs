@@ -21,7 +21,7 @@ Input.propTypes = {
   placeholder: ProtoTypes.string.isRequired,
   onChange: ProtoTypes.func,
   value: ProtoTypes.string,
-  // cor: ProtoTypes.string
+  cor: ProtoTypes.string
 };
 
 export default Input;
