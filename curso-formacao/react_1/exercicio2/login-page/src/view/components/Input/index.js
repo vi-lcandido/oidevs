@@ -24,8 +24,4 @@ Input.propTypes = {
   // cor: ProtoTypes.string
 };
 
-Input.defaultProps = {
-  cor: "black"
-}
-
 export default Input;

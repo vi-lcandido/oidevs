@@ -17,7 +17,7 @@ const LoginPage = () => {
   // const [subtitle, setSubtitle] = useState();
   const [showError, setShowError] = useState(false);
   // valor do input do usuario:
-  const [nomeDeUsuario, setNomeDeUsuario] = useState("");
+  const [nomeDeUsuario, setNomeDeUsuario] = useState("#e1e1e1");
   // valor do input da senha:
   const [senha, setSenha] = useState("");
   //cirando usuários
@@ -36,7 +36,7 @@ const LoginPage = () => {
     },
   ]);
   //criando estado para mudança de cor do input do usuário qnd as credenciais forem inválidas
-  const [corInput, setCorInput] = useState();
+  const [corInput, setCorInput] = useState("#");
 
   const vaParaHome = () => {
     const usuarioEscolhido = usuarios.find(
