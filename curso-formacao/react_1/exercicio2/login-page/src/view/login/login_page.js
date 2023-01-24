@@ -12,6 +12,7 @@ import Subtitle from "../components/Subtitle";
 
 const LoginPage = () => {
   const navigate = useNavigate();
+  
 
   const [title, setTitle] = useState("Login");
   // const [subtitle, setSubtitle] = useState();
@@ -21,22 +22,31 @@ const LoginPage = () => {
   // valor do input da senha:
   const [senha, setSenha] = useState("");
   //cirando usuários
-  const [usuarios, setUsuarios] = useState([
+  const [usuarios] = useState([
     {
+      id: 1,
       email: "joao@hotmail.com",
       password: "oidevs",
     },
     {
+      id: 2,
       email: "jady@oi.com.br",
       password: "oidevs",
     },
     {
+      id: 3,
       email: "raniel@oi.com.br",
       password: "caneta",
     },
+    {
+      id: 4,
+      email: "alice@oi.com.br",
+      password: "caneta",
+    },
   ]);
+
   //criando estado para mudança de cor do input do usuário qnd as credenciais forem inválidas
-  const [corInput, setCorInput] = useState("#");
+  const [corInput, setCorInput] = useState("#e1e1e1");
 
   const vaParaHome = () => {
     const usuarioEscolhido = usuarios.find(
@@ -44,7 +54,8 @@ const LoginPage = () => {
     );
 
     if (usuarioEscolhido) {
-      navigate("/home");
+      //passa como parâmetro primeiro sting depois objeto e o state é um objeto tb
+      navigate("/home", {state: { listaDeUsuarios: usuarios}});
     } else {
       setShowError(true);
       setCorInput("red");
