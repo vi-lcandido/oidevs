@@ -1,7 +1,7 @@
 import "./style.css";
 import ProtoTypes from "prop-types";
 
-const Title = ({ text }) => {
+const Title = ({ text, padBtm }) => {
   return (
     <div className="login-header">
       <h2 className="title">{text}</h2>

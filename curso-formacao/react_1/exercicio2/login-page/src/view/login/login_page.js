@@ -5,14 +5,12 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import Link from "../components/Link";
 // import Subtitle from "../components/Subtitle";
-
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Subtitle from "../components/Subtitle";
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  
 
   const [title, setTitle] = useState("Login");
   // const [subtitle, setSubtitle] = useState();
@@ -55,7 +53,9 @@ const LoginPage = () => {
 
     if (usuarioEscolhido) {
       //passa como parâmetro primeiro sting depois objeto e o state é um objeto tb
-      navigate("/home", {state: { listaDeUsuarios: usuarios}});
+      navigate("/home", {
+        state: { listaDeUsuarios: usuarios },
+      });
     } else {
       setShowError(true);
       setCorInput("red");
@@ -83,7 +83,6 @@ const LoginPage = () => {
           inputType={"password"}
           onChange={(e) => setSenha(e.target.value)}
         />
-
         <Button text="Entrar" aoClicar={vaParaHome} />
         <Button
           text="Trocar título"
@@ -93,7 +92,9 @@ const LoginPage = () => {
         />
         <Link
           text="Esqueceu a senha?"
-          aoClicar={() => navigate("/recoverPassword")}
+          aoClicar={() =>
+            navigate("/recoverPassword")
+          }
         />
       </section>
     </div>

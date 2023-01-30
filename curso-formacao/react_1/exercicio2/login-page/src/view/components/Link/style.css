@@ -5,4 +5,5 @@ a.login-link {
   text-align: center;
   opacity: 0.75;
   font-size: 13px;
+  cursor: pointer;
 }
