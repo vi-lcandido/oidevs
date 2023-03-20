@@ -2,13 +2,19 @@
 
 <p align="center">Final Exercise of Fifth Period from OiDevs Program</p>
 
+---
+
+## :computer: About The Project
+
+- The project is a login page. - https://github.com/vi-lcandido/oidevs/tree/master/curso-formacao/react_1/exercicio2/login-page
+- The goal of this project was to create a login page for educational purposes.
 
 ---
 
 ## :white_check_mark: Features
-- [x] Clone a login page
+- [x] Create a login page
 - [x] Create react components
-- [x] When logged in redirect to home page
+- [x] When logged in redirect to home page using hooks
 
 ---
 
