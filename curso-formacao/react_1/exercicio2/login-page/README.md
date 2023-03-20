@@ -6,7 +6,7 @@
 
 ## :computer: About The Project
 
-- The project is a login page using ReactJS
+- The project is a login page;
 - The goal of this project was to create a login page for educational purposes.
 
 ---
